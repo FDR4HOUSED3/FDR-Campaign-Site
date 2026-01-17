@@ -1,345 +1,467 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  background: #ffffff;
-  color: #111;
-}
-
-/* ALERT BAR */
-.top-alert {
-  background: #c8102e;
-  color: #fff;
-  text-align: center;
-  padding: 8px;
-  font-weight: bold;
-  font-size: 14px;
+/* FDR BASE */
+body.fdr-body {
+  background: #f7f3e8;
+  color: #1c1c1c;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
 }
 
 /* HEADER */
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 40px;
-  border-bottom: 2px solid #c8102e;
+.fdr-header {
+  border-bottom: 3px solid #8b1e2d;
+  padding: 30px 40px;
+  text-align: center;
 }
 
-.logo {
+.fdr-seal {
+  font-size: 20px;
+  letter-spacing: 2px;
   font-weight: bold;
-  font-size: 18px;
 }
 
-.nav-links a {
+.fdr-nav {
+  margin-top: 15px;
+}
+
+.fdr-nav a {
   margin: 0 12px;
   text-decoration: none;
   color: #1f3c88;
-  font-weight: 600;
-}
-
-.header-actions .btn {
-  margin-left: 10px;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 10px 18px;
-  text-decoration: none;
   font-weight: bold;
-  border-radius: 2px;
-  display: inline-block;
 }
 
-.btn-red {
-  background: #c8102e;
-  color: white;
+.fdr-nav-cta {
+  color: #8b1e2d;
 }
 
-.btn-blue {
-  background: #1f3c88;
-  color: white;
+/* FIRESIDE */
+.fireside {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 30px;
 }
 
-.btn-outline {
-  border: 2px solid #c8102e;
-  color: #c8102e;
-}
-
-.btn-outline-light {
-  border: 2px solid white;
-  color: white;
-}
-
-.logo a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: inherit;
-}
-
-.logo a:hover {
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  position: relative;
-  height: 80vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-image 1s ease-in-out;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  padding: 120px 60px;
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 56px;
-  line-height: 1.1;
-}
-
-.hero-sub {
-  margin: 20px 0;
-  font-size: 18px;
-}
-
-.hero-buttons .btn {
-  margin-right: 10px;
-}
-
-/* JOIN MOVEMENT */
-.join-movement {
-  background: #c8102e;
-  color: white;
-  padding: 40px;
+.fireside h1 {
+  font-size: 40px;
   text-align: center;
-}
-
-.join-form {
-  margin-top: 20px;
-}
-
-.join-form input {
-  padding: 10px;
-  margin-right: 6px;
-}
-
-.join-form button {
-  padding: 10px 16px;
-  background: #1f3c88;
-  color: white;
-  border: none;
-}
-
-/* AGENDA */
-.agenda {
-  display: flex;
-  padding: 80px 60px;
-  gap: 40px;
-}
-
-.agenda-text {
-  flex: 1;
-}
-
-.agenda-image {
-  flex: 1;
-  min-height: 260px;
-  background: url("../assets/img/agenda.jpg") center top / cover no-repeat;
-  border-radius: 4px;
-}
-
-/* MERCH */
-.merch {
-  background: #1f3c88;
-  color: white;
-  padding: 60px;
-  text-align: center;
-}
-
-.merch-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   margin-bottom: 30px;
 }
 
-.merch-item {
-  width: 200px;
+.fireside-quote {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
 }
 
-.merch-img {
-  height: 180px;
-  background: #eee;
-  margin-bottom: 10px;
+/* NATIONAL PURPOSE */
+.national-purpose {
+  background: #1f3c88;
+  color: #fff;
+  padding: 70px 30px;
+  text-align: center;
 }
 
-/* SOCIAL */
-.social {
+.national-purpose h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* PILLARS */
+.pillars {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.pillar {
+  flex: 1;
+  text-align: center;
+}
+
+.pillar h3 {
+  font-size: 26px;
+  border-bottom: 2px solid #8b1e2d;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* CALL TO SERVICE */
+.call-service {
+  background: #f0e6d6;
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.fdr-primary-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: 2px solid #1f3c88;
+  text-decoration: none;
   font-weight: bold;
+  color: #1f3c88;
 }
 
 /* FOOTER */
-.footer {
+.fdr-footer {
   background: #1f3c88;
-  color: white;
+  color: #fff;
   padding: 40px;
-}
-
-.footer-join input {
-  padding: 10px;
-  margin-right: 6px;
-}
-
-.footer-join button {
-  padding: 10px 16px;
-  background: #c8102e;
-  border: none;
-  color: white;
-}
-
-.disclaimer {
-  margin-top: 30px;
+  text-align: center;
   font-size: 13px;
-  text-align: center;
-  font-weight: bold;
-  opacity: 0.9;
 }
-.join-movement .btn {
-  margin-top: 20px;
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pillars {
+    flex-direction: column;
+  }
 }
-.agenda-text .btn {
-  margin-top: 20px;
+/* Fireside portrait layout */
+.fireside.with-portrait {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 30px;
 }
-.page-hero {
-  background: #f5f5f5;
-  padding: 80px 40px;
+
+.fireside-text {
+  flex: 2;
+}
+
+.fireside-portrait {
+  flex: 1;
   text-align: center;
 }
 
-.page-hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.fireside-portrait img {
+  width: 100%;
+  max-width: 320px;
+  border: 4px solid #8b1e2d;
+  background: #fff;
+}
+/* Campaign Broadcast */
+.campaign-broadcast {
+  background: #f7f3e8;
+  text-align: center;
+  padding: 80px 30px;
+  border-top: 2px solid #8b1e2d;
+}
+
+.campaign-broadcast h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.broadcast-sub {
+  font-style: italic;
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.video-frame {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 4px solid #1f3c88;
+  background: #000;
+}
+
+.video-frame video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* =========================
+   FDR THEME (SITE-WIDE)
+   Add to bottom of style.css
+   ========================= */
+
+body.fdr-body {
+  background: #f7f3e8; /* parchment */
+  color: #1c1c1c;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+/* Masthead */
+.fdr-header {
+  border-bottom: 3px solid #8b1e2d;
+  padding: 28px 40px;
+  text-align: center;
+  background: #f7f3e8;
+}
+
+.fdr-seal {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.page-hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 18px;
-  opacity: 0.9;
+/* Nav */
+.fdr-nav {
+  margin-top: 14px;
 }
+
+.fdr-nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #1f3c88;
+  font-weight: bold;
+}
+
+.fdr-nav a:hover {
+  text-decoration: underline;
+}
+
+.fdr-nav-cta {
+  color: #8b1e2d !important;
+}
+
+/* Fireside blocks */
+.fireside {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 30px;
+}
+
+.fireside h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.fireside p {
+  margin-top: 14px;
+}
+
+.fireside-quote {
+  text-align: center;
+  font-style: italic;
+  margin: 18px auto 26px;
+  max-width: 850px;
+  opacity: 0.95;
+}
+
+/* National Purpose band */
+.national-purpose {
+  background: #1f3c88;
+  color: #fff;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.national-purpose h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.national-purpose p {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* Pillars */
+.pillars {
+  display: flex;
+  gap: 40px;
+  max-width: 1050px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.pillar {
+  flex: 1;
+  text-align: center;
+}
+
+.pillar h3 {
+  font-size: 26px;
+  border-bottom: 2px solid #8b1e2d;
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.pillar p {
+  opacity: 0.95;
+}
+
+/* Call to service */
+.call-service {
+  background: #f0e6d6;
+  text-align: center;
+  padding: 80px 30px;
+  border-top: 2px solid #8b1e2d;
+}
+
+.call-service h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.fdr-primary-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 28px;
+  border: 2px solid #1f3c88;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1f3c88;
+}
+
+.fdr-primary-btn:hover {
+  background: #1f3c88;
+  color: #fff;
+}
+
+/* Platform content reused */
 .platform-content {
-  padding: 80px 60px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 70px 30px;
 }
 
 .platform-item {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .platform-item h2 {
   font-size: 28px;
+  border-bottom: 2px solid #8b1e2d;
+  display: inline-block;
+  padding-bottom: 6px;
   margin-bottom: 10px;
 }
 
 .platform-item p {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  margin-top: 12px;
 }
 
-.platform-item ul {
-  padding-left: 20px;
-}
-
-.platform-item li {
-  margin-bottom: 8px;
-}
-@media (max-width: 768px) {
-  .page-hero h1 {
-    font-size: 36px;
-  }
-
-  .platform-content {
-    padding: 60px 25px;
-  }
-}
+/* Timeline polish */
 .timeline {
   max-width: 900px;
   margin: 0 auto;
-  padding: 80px 40px;
+  padding: 70px 30px;
+}
+
+/* Footer */
+.fdr-footer {
+  background: #1f3c88;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pillars {
+    flex-direction: column;
+  }
+
+  .fireside h1 {
+    font-size: 32px;
+  }
+}
+/* =========================
+   FDR CAMPAIGN CALENDAR FIX
+   ========================= */
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 0 30px 0 40px;
+  border-left: 3px solid #8b1e2d;
 }
 
 .timeline-item {
-  display: flex;
-  gap: 30px;
-  padding: 30px 0;
-  border-left: 3px solid #e5e5e5;
-  padding-left: 30px;
   position: relative;
+  padding: 30px 0 30px 40px;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -9px;
-  top: 40px;
+  left: -10px;
+  top: 42px;
   width: 16px;
   height: 16px;
-  background: #c8102e;
+  background: #8b1e2d;
   border-radius: 50%;
 }
 
+/* Date */
 .timeline-date {
-  min-width: 110px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #1f3c88;
+  margin-bottom: 6px;
 }
 
+/* Event title */
 .timeline-content h3 {
-  margin-bottom: 8px;
+  font-size: 22px;
+  margin-bottom: 6px;
 }
 
+/* Description */
 .timeline-content p {
-  line-height: 1.6;
+  max-width: 700px;
+  opacity: 0.95;
 }
 
 /* Highlight Election Day */
-.timeline-item.highlight {
-  border-left-color: #c8102e;
+.timeline-item.highlight::before {
+  background: #1f3c88;
 }
 
 .timeline-item.highlight .timeline-date {
-  color: #c8102e;
+  color: #8b1e2d;
+}
+/* =========================
+   GET INVOLVED – SERVICE GRID
+   ========================= */
+
+.service-grid {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.service-card {
+  background: #f0e6d6;
+  padding: 40px 30px;
+  border-top: 4px solid #8b1e2d;
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  opacity: 0.95;
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-  .timeline-item {
-    flex-direction: column;
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: 1fr;
   }
+}
 
-  .timeline-date {
-    margin-bottom: 10px;
+@media (max-width: 768px) {
+  .fireside.with-portrait {
+    flex-direction: column;
+    text-align: center;
   }
 }
